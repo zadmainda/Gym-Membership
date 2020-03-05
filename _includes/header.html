@@ -1,0 +1,14 @@
+<section id = 'header'>		
+  <!-- Logo -->
+  <h1><a href = '/'>Primal Fitness</a></h1>
+
+  {%- include nav.html %}
+  
+  {% if page.layout == 'home' %}
+
+    {%- include banner.html %}
+
+    {%- include intro.html %}
+
+  {%- endif %}
+</section>

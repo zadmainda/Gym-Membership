@@ -1,0 +1,44 @@
+<section id = 'footer'>
+  <div class = 'container'>
+    <div class = 'grid-auto'>
+      <section>
+        <header>
+          <h2>Most Viewed Blogs</h2>
+        </header>
+        <ul class = 'dates'>
+          {%- for post in site.posts limit: 3 %}
+          <li>
+            <span class = 'date'>{{ post.date | date: "%b" }} <strong>{{ post.date | date: "%d" }}</strong></span>
+            <h3><a href = '{{ post.url }}'>{{ post.title }}</a></h3>
+            <p>{{ post.content | strip_html | truncatewords 25 }}</p>
+          </li>
+          {%- endfor %}
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Social Media Profile</h2>
+        </header>
+        <ul class = 'social'>
+          {%- for item in site.data.social %}
+          <li>
+            <a class = 'icon fa-{{ item }}' href = '#'><span class = 'label'>{{ item | capitalize }}</span></a>
+          </li>
+          {%- endfor -%}
+        </ul>
+        <div class = 'contact'>
+          {{ site.data.address.details | markdownify }}
+        </div>
+      </section>
+    </div>
+    <div class = 'copyright'>
+      <ul class = 'links'>
+        <li>&copy; All rights reserved.</li>
+        <li>
+          {%- assign d = site.designer -%}
+          Design: <a href = '{{ d.url }}'>{{ d.name }}</a>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</section>

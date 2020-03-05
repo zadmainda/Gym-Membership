@@ -1,0 +1,61 @@
+title: "Primal Fitness"
+description: ""
+designer:
+  name: zadock
+  url: https://github.com/zadok-kinara
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+sass:
+  style: compressed
+
+collections: 
+  content:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "_content"
+    values:
+      layout: "page"
+      permalink: /:title/
+      # image: thumbnail.svg
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "page"
+      author: zadock
+      permalink: /:title/
+      # image: thumbnail.svg
+
+pagination:
+  enabled: false
+  debug: false
+  per_page: 5
+  permalink: "/page/:num/"
+  title: ":title"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  
+# Plugin: Auto Pages (jekyll-paginate-v2)
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    enabled: true
+    slugify:
+      mode: raw
+      cased: true
+    layouts:
+      - "tags.md"
+    title: ":tag" # :tag is replaced by the tag name
+    permalink: "/tag/:tag"

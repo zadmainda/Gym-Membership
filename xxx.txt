@@ -1,0 +1,1 @@
+block in verify_gemfile_dependencies_are_found!': Could not find gem 'wdm (>= 0.1.0) x64-mingw32' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)

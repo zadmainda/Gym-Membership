@@ -1,5 +1,5 @@
 ---
-title: 'Page With Left Sidebar'
+title: 'Personal Training'
 class: 'left-sidebar'
 sidebar: left
 featured_image: 2.jpg

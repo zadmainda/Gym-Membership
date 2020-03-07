@@ -14,9 +14,9 @@
 	}
 }
 
-section, article {
-	margin-bottom: 2.5em;
-}
+// section, article {
+// 	margin-bottom: 2.5em;
+// }
 
 section > :last-child, section:last-child, article > :last-child, article:last-child {
 	margin-bottom: 0;
@@ -482,16 +482,16 @@ ul.divided li:first-child {
 	outline: 0;
 }
 
-#nav > ul > li:hover > a, #nav > ul > li.active > a {
+#nav > ul > li:hover > a /*#nav > ul > li.active > a*/ {
 	background: #f3f3f3;
 }
-
+/*
 #nav > ul > li.current > a {
 	background: #d52349;
 	color: var(--white) !important;
 	font-weight: 500;
 }
-
+*/
 .dropotron {
 	border-radius: 5px;
 	background-color: var(--dark);

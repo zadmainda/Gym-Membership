@@ -2,7 +2,7 @@
 title: 'Wellness'
 class: 'right-sidebar'
 sidebar: right
-featured_image: pic01.jpg
+featured_image: man.jpg
 ---
 
 

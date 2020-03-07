@@ -22,9 +22,9 @@
 #           url: '#'
 #     - name: Veroeros feugiat
 #       url: '#'
-- name: Left Sidebar
-  url: '/left-sidebar/'
-- name: Right Sidebar
-  url: '/right-sidebar/'
-- name: No Sidebar
-  url: '/no-sidebar/'
+- name: personal training
+  url: '/personal-training/'
+- name: training
+  url: '/training/'
+- name: nutrition
+  url: '/nutrition/'
